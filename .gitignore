@@ -1,0 +1,6 @@
+.venv/
+_pycache_/
+.pytest_cache/
+*.pyc
+.env
+promptfoo-output/

@@ -1,0 +1,26 @@
+description: GenAI Banking Agent Benchmark
+
+prompts:
+  - "{{question}}"
+
+tests:
+
+  - description: Gold Account RAG
+    vars:
+      question: >
+        What is the minimum balance
+        for Gold Account?
+
+    assert:
+      - type: contains
+        value: "10,000"
+
+  - description: ATM Limit
+    vars:
+      question: >
+        What is the daily ATM
+        withdrawal limit?
+
+    assert:
+      - type: contains
+        value: "50,000"
